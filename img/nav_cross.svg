@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid" width="200" height="200" viewBox="0 0 200 200">
+  <defs>
+    <style>
+      .cls-3:hover {
+        fill: #0ff;
+      }
+
+      .cls-1, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        fill-rule: evenodd;
+      }
+
+      .cls-2, .cls-3 {
+        font-size: 60px;
+      }
+
+      .cls-3 {
+        text-anchor: middle;
+        font-family: "Lucida Sans Unicode";
+        cursor: pointer;
+      }
+
+      a {
+        fill: #f00;
+      }
+    </style>
+  </defs>
+  <path d="M205.768,-2.232 L103.536,100.000 L200.768,197.232 L197.232,200.768 L100.000,103.536 L0.768,202.768 L-2.768,199.232 L96.464,100.000 L-1.768,1.768 L1.768,-1.768 L100.000,96.464 L202.232,-5.768 L205.768,-2.232 Z" class="cls-1"/>
+  <text x="36" y="119" class="cls-2"><tspan x="36" class="cls-3 lt-a"><a href="../#slide_two" target="_parent">A</a></tspan></text>
+  <text x="167" y="118" class="cls-2"><tspan x="167" class="cls-3 lt-p">P</tspan></text>
+  <text x="99" y="54" class="cls-2"><tspan x="99" class="cls-3 lt-h">H</tspan></text>
+  <text x="99" y="184" class="cls-2"><tspan x="99" class="cls-3 lt-c">C</tspan></text>
+</svg>
