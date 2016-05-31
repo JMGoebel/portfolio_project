@@ -1,28 +1,113 @@
+@import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative:700,400|Quicksand);
+
 .nav-compass {
   top: 10px;
   left: 10px;
-  width: 100px;
-  height: 100px;
   position: fixed;
   cursor: pointer;
 }
 
-.x {
-
+body, html, .slide {
+  font-family: "quicksand", sans-serif;
+  font-size: 20px;
+  color: white;
+  padding: 0;
+  margin: 0;
+  height: 100%;
 }
 
-#slide_one {
-
+section {
+    min-height: 100%;
 }
 
-#slide_two {
-
+a {
+  color: white;
+  fill: white;
+  text-decoration: none;
 }
 
-#slide_three {
-
+a:visited {
+  color: white;
+  fill: white;
 }
 
-#slide_four {
+a:hover {
+  color: darkred;
+  fill: darkred;
+  text-decoration: none;
+}
 
+a:active {
+  color: red;
+  fill: red;
+  text-decoration: none;
+}
+
+a:focus {
+  color: red;
+  fill: red;
+  text-decoration: none;
+}
+
+.active_link {
+  color: purple !important;
+}
+
+/* SVG Cross-Nav*/
+.letters {
+  fill: white;
+  font-size: 50px;
+  text-anchor: middle;
+  font-family: Cinzel Decorative;
+  cursor: pointer;
+}
+
+.svg-cross {
+  fill: darkred;
+  fill-rule: evenodd;
+}
+
+#home {
+  background: black;
+}
+
+.custom-navigation{
+  z-index: 2;
+  top: 10px;
+  position: fixed;
+  right: 0;
+}
+
+.custom-navigation ul{
+  list-style: none;
+}
+
+.custom-navigation ul li{
+  float: left;
+  text-align: center;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.red {
+  color: red;
+  fill: red !important;
+}
+.slide {
+  background-color: black;
+}
+
+.banner-column {
+  height: 100%;
+  box-sizing: border-box;
+  background-color: darkred;
+  z-index: 1;
+}
+
+.bottom_right {
+  text-align: center;
+  width: 100%;
+  right: 0px;
+  bottom: -10px;
+  position: absolute;
 }
