@@ -6,8 +6,6 @@ $(document).ready(function () {
   var contact_pos = $("#contact").offset().top;
 
   $(".home-link").addClass("red");
-  $(".home-link").css("fill", "red");
-
 
   $(window).scroll(function(){
     var y = $(window).scrollTop();
@@ -15,39 +13,32 @@ $(document).ready(function () {
     /* Not the most efficient way but i'm learning */
     if (y >= home_pos && y < about_pos){
       $(".home-link").addClass( "red" );
-      $(".home-link").css("fill", "red");;
     } else {
       $(".home-link").removeClass( "red" );
-      $(".home-link").css("fill", "white");
     };
 
     if (y >= about_pos && y < portfolio_pos){
       $(".about-link").addClass( "red" );
-      $(".about-link").css("fill", "red");;
     } else {
       $(".about-link").removeClass( "red" );
-      $(".about-link").css("fill", "white");
     };
 
     if (y >= portfolio_pos && y < contact_pos){
       $(".portfolio-link").addClass( "red" );
-      $(".portfolio-link").css("fill", "red");;
     } else {
       $(".portfolio-link").removeClass( "red" );
-      $(".portfolio-link").css("fill", "white");
     };
 
      if (y >= contact_pos){
       $(".contact-link").addClass( "red" );
-      $(".contact-link").css("fill", "red");;
     } else {
       $(".contact-link").removeClass( "red" );
-      $(".contact-link").css("fill", "white");
     };
 
   });
 
 
+// Thank you www.w3schools.com for this sweet script!!!
   // Add smooth scrolling to all links
   $("a").on('click', function (event) {
     // Make sure this.hash has a value before overriding default behavior
@@ -70,5 +61,4 @@ $(document).ready(function () {
   });
 });
 
-// Slightly modified to accept input from SVG image
-// Thank you www.w3schools.com for this sweet script!!!
+

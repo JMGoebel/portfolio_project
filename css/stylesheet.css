@@ -1,137 +1,136 @@
 @import url(https://fonts.googleapis.com/css?family=Cinzel+Decorative:700,400|Quicksand);
 
-.nav-compass {
-  top: 10px;
-  left: 10px;
-  position: fixed;
-  cursor: pointer;
-}
+
+/*  ----------------------------------
+    :: Global Styling
+    ----------------------------------  */
 
 body, html, .slide {
   font-family: "quicksand", sans-serif;
+  background-color: #111;
   font-size: 20px;
-  color: lightgrey;
+  color: #aaa;;
+  color: #aaa;;
   padding: 0;
   margin: 0;
   height: 100%;
 }
 
-section {
-    min-height: 100%;
-}
-
-a {
+a, a:visited {
   color: white;
-  fill: white;
   text-decoration: none;
-}
-
-a:visited {
-  color: white;
-  fill: white;
 }
 
 a:hover {
   color: darkred;
-  fill: darkred;
-  text-decoration: none;
 }
 
-a:active {
+a:active, a:focus {
   color: red;
-  fill: red;
-  text-decoration: none;
-}
-
-a:focus {
-  color: red;
-  fill: red;
-  text-decoration: none;
-}
-
-.active_link {
-  color: purple !important;
-}
-
-/* SVG Cross-Nav*/
-.letters {
-  fill: white;
-  font-size: 50px;
-  text-anchor: middle;
-  font-family: Cinzel Decorative;
-  cursor: pointer;
-}
-
-.svg-cross {
-  fill: darkred;
-  fill-rule: evenodd;
-}
-
-.custom-navigation{
-
-  z-index: 2;
-  top: 10px;
-  position: fixed;
-  right: 0;
-}
-
-.custom-navigation ul{
-  list-style: none;
-}
-
-.custom-navigation ul li{
-  float: left;
-  text-align: center;
-  display: inline-block;
-  margin-right: 25px;
-  font-size: 1em;
 }
 
 .red {
   color: red;
-  fill: red !important;
 }
 
-.container-fluid {
-  background-color: #111;
+/*  ----------------------------------
+    :: Mobile First Styling (Default)
+    ----------------------------------  */
+.navigation {
+  top: 0;
+  right: 0;
+  width: 300px;
+  position: fixed;
+  z-index: 2;
 }
 
-.row {
-  height: 100%;
+.navigation ul {
+  width: 100%;
   padding: 0;
   margin: 0;
+}
+
+.navigation li {
+  list-style: none;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.page-centering {
   position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
 
-.name{
+#name {
   color: darkred;
-  width: 100%;
-  text-align: right;
-  font-size: 5em;
   font-family: Cinzel Decorative;
+  text-align: center;
+  font-size: 3em;
 }
 
-.name-text {
-  color: #aaa;
-  min-width: 400px;
+.slide {
+	position: relative;
 }
 
 .pg-number {
-  right: 0;
+  margin-bottom: -10px;
+  color: #333;
+  padding: 0 10px 0 10px;
   bottom: 0;
-  text-align: center;
+  right: 0;
   position: absolute;
 }
 
-
-.hero {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
-  display: block;
+.pg-number hr{
+  margin-bottom: -10px;
+  width: 100%;
 }
 
-.row-content-middle {
-  display: flex;
-  align-items: center;
-  position: absolute;
+.content {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 500px;
 }
+
+.devider {
+  color: #000;
+  background-color: #000;
+  border: 0;
+  width: 80%;
+  height: 1px;
+}
+
+/*  ----------------------------------
+    :: Tablet Styling
+    ----------------------------------  */
+@media only screen and (min-width: 600px) {
+  #name {
+    font-size: 4em;
+  }
+
+  .content {
+    font-size: 1.5em;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+}
+
+/*  ----------------------------------
+    :: Desktop Styling
+    ----------------------------------  */
+@media only screen and (min-width: 1000px) {
+  #name {
+    font-size: 5em;
+  }
+
+  .content {
+    font-size: 2em;
+    margin: 0 auto;
+    max-width: 700px;
+  }
+}
+
